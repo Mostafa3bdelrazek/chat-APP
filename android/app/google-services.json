@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "637878406468",
+    "project_id": "scholar-chat-91b2b",
+    "storage_bucket": "scholar-chat-91b2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637878406468:android:8d782e796b49f011281b11",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637878406468-n2chhuug13h2cl12c7kpk03opod7u6ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqAwJdvrLa04RhciV92n4h_upvnvZk664"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637878406468-n2chhuug13h2cl12c7kpk03opod7u6ob.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "637878406468-1ocuo9kabcv7pi0urp8qkcf1vd3vgb0v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.scolerChat.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637878406468:android:d29ae9ebd4b247ad281b11",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637878406468-n2chhuug13h2cl12c7kpk03opod7u6ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqAwJdvrLa04RhciV92n4h_upvnvZk664"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637878406468-n2chhuug13h2cl12c7kpk03opod7u6ob.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "637878406468-1ocuo9kabcv7pi0urp8qkcf1vd3vgb0v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.scolerChat.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637878406468:android:be38c1b814a66de7281b11",
+        "android_client_info": {
+          "package_name": "com.example.scoler_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637878406468-n2chhuug13h2cl12c7kpk03opod7u6ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqAwJdvrLa04RhciV92n4h_upvnvZk664"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637878406468-n2chhuug13h2cl12c7kpk03opod7u6ob.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "637878406468-1ocuo9kabcv7pi0urp8qkcf1vd3vgb0v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.scolerChat.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
