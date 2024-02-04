@@ -1,6 +1,6 @@
 // ignore_for_file: file_names, avoid_print, sized_box_for_whitespace, use_build_context_synchronously
+import 'package:chat_app/screens/cubits/Auth_cubit/auth_cubit.dart';
 import 'package:chat_app/screens/cubits/chat_cubit/chat_cubit.dart';
-import 'package:chat_app/screens/cubits/login_cubit/login_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<LoginCubit, LoginCubitState>(
+    return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is LoginLoading) {
           isLoading = true;
@@ -94,7 +94,7 @@ class LoginScreen extends StatelessWidget {
                         text: 'LOGIN',
                         onPressed: () async {
                           if (myKey.currentState!.validate()) {
-                            BlocProvider.of<LoginCubit>(context)
+                            BlocProvider.of<AuthCubit>(context)
                                 .login(email: email!, password: password!);
                           }
                         }),

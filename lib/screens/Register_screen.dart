@@ -1,5 +1,5 @@
 // ignore_for_file: file_names, must_be_immutable, non_constant_identifier_names, use_build_context_synchronously
-import 'package:chat_app/screens/cubits/Register_cubit/register_cubit.dart';
+import 'package:chat_app/screens/cubits/Auth_cubit/auth_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -19,7 +19,7 @@ class RegisterScreen extends StatelessWidget {
   RegisterScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<RegisterCubit, RegisterState>(
+    return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is RegisterLoading) {
           isLoading = true;
@@ -90,7 +90,7 @@ class RegisterScreen extends StatelessWidget {
                           text: 'REGISTER',
                           onPressed: () async {
                             if (myKey.currentState!.validate()) {
-                              BlocProvider.of<RegisterCubit>(context)
+                              BlocProvider.of<AuthCubit>(context)
                                   .register(email: email!, password: password!);
                             }
                           }),
