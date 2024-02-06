@@ -25,11 +25,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         } catch (e) {
           emit(LoginFailure(errorMessage: 'something went wrong !'));
         }
-      } 
-      
-      
-      
-      else if (event is RegisterEvent) {
+      } else if (event is RegisterEvent) {
         emit(RegisterLoading());
         try {
           await FirebaseAuth.instance.createUserWithEmailAndPassword(

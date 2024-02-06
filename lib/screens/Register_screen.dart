@@ -24,7 +24,6 @@ class RegisterScreen extends StatelessWidget {
         if (state is RegisterLoading) {
           isLoading = true;
         } else if (state is RegisterSuccess) {
-          // BlocProvider.of<ChatCubit>(context).getMessages();
           Navigator.push(
             context,
             MaterialPageRoute(

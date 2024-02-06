@@ -7,11 +7,10 @@ part 'auth_state.dart';
 class AuthCubit extends Cubit<AuthState> {
   AuthCubit() : super(AuthInitial());
 
-  
   Future<void> register({required var email, required var password}) async {
     emit(RegisterLoading());
     try {
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
@@ -27,14 +26,10 @@ class AuthCubit extends Cubit<AuthState> {
     }
   }
 
-
-
-
-  
   Future<void> login({required var email, required var password}) async {
     emit(LoginLoading());
     try {
-        await FirebaseAuth.instance.signInWithEmailAndPassword(
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
